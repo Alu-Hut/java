@@ -1,0 +1,7 @@
+
+
+@startuml
+Zapfsaeule -> Lager : zapfen
+Lager --> Zapfsaeule : zapfen
+@enduml
+ 

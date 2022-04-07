@@ -1,11 +1,24 @@
 package Tankstelle;
 
-public class Zapfsaeule {
-	private String treibstoffArt;
-	private int amount;
+
+/**
+ * 
+ * @startuml
+ * Zapfsaeule -> Lager : zapfen
+ * Lager --> Zapfsaeule : zapfen
+ * @enduml
+ *
+ */
+
+public class Zapfsaeule extends Treibstofflager{
 	
-	public Zapfsaeule(String treibstoffArt, int amount) {
-		super();
+	private String treibstoffArt;
+	private int amountZ;
+	
+	public Zapfsaeule(String fuel, int preis, int amount) {
+		super(fuel, preis, amount);
+		
+		
 	}
 	
 	public String getTreibstoffArt() {
